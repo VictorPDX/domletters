@@ -1,5 +1,6 @@
 # domletters — count dominant letters
-<Your Name> and Bart Massey 2021
+
+Victor Heredia and Bart Massey 2021
 
 This repository contains a program that counts dominant
 letters in alphabetic words of an ASCII text read from
@@ -70,6 +71,12 @@ text of
 [Tom Swift and His Airship](https://www.gutenberg.org/cache/epub/3005/pg3005.txt),
 from which the file `swift.txt` in this distribution was
 taken.
+
+### Additional Acknowledgement
+
+Green Eggs and Ham was made available by
+[Curricular Linux Environment at Rice (CLEAR)](https://www.clear.rice.edu/comp200/resources/texts/Green%20Eggs%20and%20Ham.txt),
+which the text can be found in `Green Eggs and Ham.txt`.
 
 ## License
 
