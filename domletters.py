@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env
 
 import re
 import sys
@@ -42,18 +42,24 @@ def domLetters(list_of_words):
         if not any(punc in token for punc in punctuation):
             sum += count_domLetters(token)
             print(f"Sum: {sum}")
-
+    return sum
 
 if __name__ == "__main__":
+    sum = 0
+    # if input if provided as a text file
     if len(sys.argv) > 1 and sys.argv[1].endswith(".txt"):
         fname = sys.argv[1]
         fileObject = open(fname, "rt")
         list_of_words = fileObject.read().split()
+        sum = domLetters(list_of_words)
     else:
-        list_of_words = sys.argv[1:]
+        # if input if provided via io stdin
+        for line in sys.stdin:
+            list_of_words = line.split()
 
-    # pass in the list to the dominant letters function
-    domLetters(list_of_words)
+            # pass in the list to the dominant letters function
+            sum += domLetters(list_of_words)
+    print(f"Sum: {sum}")
 
 else:
     print("This is a script and not a module. Do not import.")
