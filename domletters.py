@@ -33,7 +33,7 @@ def domLetters(list_of_words):
         list_of_words (list): The input text whose dominant letters will be counted.
 
     Returns:
-        None
+        [int]: The sum of dominant letter from the current list of words.
     """
     sum = 0
     # loop over all the word in the input file
